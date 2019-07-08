@@ -8,7 +8,7 @@ const srcPath = path.resolve(__dirname, 'src')
 
 module.exports = {
   mode: 'development',
-  devtool: 'inline-source-map',
+  devtool: 'none', // devtool: 'inline-source-map',
   devServer: {contentBase: './dist', hot: true},
   entry: {
     app: './src/index.js',
